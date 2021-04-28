@@ -11,6 +11,8 @@ $(document).ready(function(){
         strs = str.split("&");
         for(var i = 0; i < strs.length; i ++){theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);}
         $("frame").attr('src',theRequest["url"]);
+    } else {
+      $("frame").attr('src',"https://www.numflurry.ml");
     }
 });
 </script>   
@@ -18,7 +20,7 @@ $(document).ready(function(){
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">     
 </head>
 <frameset border=0 frameBorder=0 frameSpacing=0 rows=0>
-    <frame name=main noResize src="https://www.numflurry.ml">
+    <frame name=main noResize>
  </frameset>
 <noframes>
 <body bgcolor="#FFFFFF" text="#000000">Sorry:Your browser doesn't support FRAME.</body>
